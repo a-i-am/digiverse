@@ -1,0 +1,5 @@
+{
+  "name": "DigiVerse VRM",
+  "description": "AI 인증 기반의 퀘스트 수행 및 3D VRM 아바타 비서 앱",
+  "requestFramePermissions": ["camera"]
+}

@@ -62,6 +62,7 @@ PackageCache/
 .backup/
 .bak/
 .vc/
+.vs/
 .version/
 AddressableAssetsData/
 addressables/

@@ -1,0 +1,112 @@
+# ==============================================================================
+# Created by https://gitignores.com/
+# PLATFORM-SPECIFIC TEMPLATE for Unity
+# Website: https://unity.com/
+# Repository: https://github.com/ronald2wing/.gitignores
+# ==============================================================================
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE OVERVIEW & USAGE NOTES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# • TEMPLATE TYPE: PLATFORM-SPECIFIC TEMPLATE
+# • PURPOSE: Unity game engine patterns for build artifacts, library cache, and temporary files
+# • DESIGN PHILOSOPHY: Modular — combine with common templates
+# • COMBINATION GUIDANCE: Combine with language templates for specific development workflows
+# • SECURITY CONSIDERATIONS: No security patterns included — add common/security.gitignore
+# • BEST PRACTICES: Review patterns and test with your SDK versions; combine with language templates
+# • OFFICIAL SOURCES: Unity documentation and community best practices
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# BUILD ARTIFACTS & DISTRIBUTION
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.apk
+*.app
+*.appimage
+*.exe
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEPENDENCY MANAGEMENT & PACKAGE CACHE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+.cache/
+Build/
+CloudBuild/
+WebGLBuild/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# DEVELOPMENT & RUNTIME ARTIFACTS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+Logs/
+PackageCache/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# PLATFORM-SPECIFIC PATTERNS
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+*.csproj
+*.dmg
+*.ipa
+*.msi
+*.sln
+*.suo
+*.unityproj
+*.user
+*.userprefs
+*.x86
+*.x86_64
+*.xcode
+*.xcodeproj
+*.xcworkspace
+.backup/
+.bak/
+.vc/
+.version/
+AddressableAssetsData/
+addressables/
+Analytics/
+Asset\ Store/
+AssetBundles/
+AssetStore/
+Collaborate/
+CrashReports/
+EditorUserSettings.asset
+Library/
+Localization/
+MemorySnapshots/
+Multiplayer/
+Netcode/
+obj/
+Packages/
+PerformanceReports/
+ProfilerData/
+ProjectSettings.asset
+ProjectSettings/
+StreamingAssets/
+UserSettings/
+WebGL/
+
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+# TESTING & QUALITY ASSURANCE
+# ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+CoverageReports/
+TestResults/
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# TEMPLATE CUSTOMIZATION & BEST PRACTICES
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 1. REVIEW: Examine all patterns before use
+# 2. CUSTOMIZE: Adapt to your project's specific structure
+# 3. TEST: Use `git check-ignore` to verify patterns
+# 4. SECURE: Always protect sensitive data and credentials
+# 5. UPDATE: Review periodically as technology evolves
+
+# Combine with language or framework templates as needed:
+
+# EXAMPLE COMBINATION:
+# cat languages/csharp.gitignore \
+#     common/security.gitignore \
+#     platforms/unity.gitignore \
+#     common/cache.gitignore | sort -u > .gitignore

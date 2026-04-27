@@ -85,9 +85,12 @@ ProfilerData/
 ProjectSettings.asset
 ProjectSettings/
 StreamingAssets/
+[Tt]emp/
+Temp/
 UserSettings/
 UIElementsSchema/
 WebGL/
+
 
 # ••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••
 # TESTING & QUALITY ASSURANCE
@@ -112,3 +115,68 @@ TestResults/
 #     common/security.gitignore \
 #     platforms/unity.gitignore \
 #     common/cache.gitignore | sort -u > .gitignore
+
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# ➕ ADDED FROM STANDARD UNITY TEMPLATE (누락 항목 보완)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 임시 및 로그 파일 보완
+.utmp/
+*.log
+
+# Blender 에셋 기본 무시
+*.blend1
+*.blend1.meta
+
+# 과도한 용량/보안 우려가 있는 폴더
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# IDE 및 에디터 플러그인 (Rider, Gradle, Consulo 등)
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.DotSettings.user
+.gradle/
+.consulo/
+ExportedObj/
+
+# Visual Studio / Mono 캐시 및 디버그 파일
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# 크래시 리포트 관련
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+
+# 추가 빌드 포맷 및 패키지
+*.aab
+*.unitypackage
+*.unitypackage.meta
+/[Bb]uilds/
+
+# 테스트 씬
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+# Addressables 플러그인 세부 캐시
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Visual Scripting 자동 생성 파일
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta

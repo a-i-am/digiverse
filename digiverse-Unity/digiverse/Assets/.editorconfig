@@ -1,0 +1,18 @@
+# 이 설정이 프로젝트의 최상위임을 명시 (상위 폴더의 설정을 무시함)
+root = true
+
+# 모든 파일에 적용되는 기본 설정
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# C# 스크립트 파일에 대한 특수 설정
+[*.cs]
+
+# 마크다운 파일 설정
+[*.md]
+trim_trailing_whitespace = false

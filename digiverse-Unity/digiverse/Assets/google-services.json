@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "408319522190",
+    "project_id": "digiverse-4c384",
+    "storage_bucket": "digiverse-4c384.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408319522190:android:aeb3ab8f141f39f2d660df",
+        "android_client_info": {
+          "package_name": "com.aiam.digiverse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu_WI1LzgID9rLI15QtJ5rRGf8Kp8ClMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

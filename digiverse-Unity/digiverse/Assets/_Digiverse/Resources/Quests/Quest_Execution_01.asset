@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e432db3a7187b740b060992d9324907, type: 3}
   m_Name: Quest_Execution_01
   m_EditorClassIdentifier: 
-  questId: 
-  questTitle: "\uC544\uCE68 \uC601\uC591\uC81C \uCC59\uACA8 \uBA39\uAE30"
+  questId: q_002
+  questTitle: "\uC624\uB298 \uD560 \uC77C \uBAA9\uB85D 100% \uB2EC\uC131"
   questIcon: {fileID: 0}
-  category: 3
-  difficulty: 1
+  category: 1
+  difficulty: 3
   verifyType: 0
   rewardValue: 10

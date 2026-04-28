@@ -31,7 +31,7 @@ namespace DigiVerse.Managers
                 QuestItemController itemController = new QuestItemController();
 
                 // TODO: 나중에 아이콘 이미지 처리 등도 넘겨주도록 수정 가능
-                itemController.Initialize(newQuestItem, questData.questTitle);
+                itemController.Initialize(newQuestItem, questData);
 
                 listContainer.Add(newQuestItem);
             }

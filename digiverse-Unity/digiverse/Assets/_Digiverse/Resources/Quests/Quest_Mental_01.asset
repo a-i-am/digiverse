@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e432db3a7187b740b060992d9324907, type: 3}
   m_Name: Quest_Mental_01
   m_EditorClassIdentifier: 
-  questId: 
-  questTitle: "\uC544\uCE68 \uC601\uC591\uC81C \uCC59\uACA8 \uBA39\uAE30"
+  questId: q_004
+  questTitle: "5\uBD84 \uBA85\uC0C1\uD558\uAE30"
   questIcon: {fileID: 0}
-  category: 3
+  category: 2
   difficulty: 1
   verifyType: 0
   rewardValue: 10

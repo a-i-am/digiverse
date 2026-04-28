@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
+using DigiVerse.Events;
+using DigiVerse.Data;
 
 namespace DigiVerse.UI
 {
@@ -11,11 +13,13 @@ namespace DigiVerse.UI
         private VisualElement _root;
         private VisualElement _handle;
         private bool _isCompleted = false;
+        private QuestData _data;
 
-        public void Initialize(VisualElement root, string title)
+        public void Initialize(VisualElement root, QuestData data)
         {
             _root = root;
-            _root.Q<Label>("quest-title").text = title;
+            _data = data;
+            _root.Q<Label>("quest-title").text = data.questTitle;
 
             // 트랙 클릭 시 토글 이벤트 발생
             VisualElement track = _root.Q<VisualElement>("slide-toggle-track");
@@ -29,8 +33,11 @@ namespace DigiVerse.UI
             if (_isCompleted)
             {
                 _root.AddToClassList("quest-item-card--completed");
-                // TODO: 여기서 퀘스트 완료 사운드 재생 및 Firebase 예비 데이터 갱신
-                Debug.Log($"[Quest] {_root.Q<Label>("quest-title").text} 완료!");
+
+                QuestEvents.OnQuestCompleted?.Invoke(_data.questId, _data.rewardValue);
+                // TODO: 퀘스트 완료 사운드 재생 및 Firebase 예비 데이터 갱신
+
+                Debug.Log($"[UI] {_data.questTitle} 완료!");
             }
             else
             {

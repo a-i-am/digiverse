@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e432db3a7187b740b060992d9324907, type: 3}
   m_Name: Quest_SelfCare_01
   m_EditorClassIdentifier: 
-  questId: 
+  questId: q_005
   questTitle: "\uC544\uCE68 \uC601\uC591\uC81C \uCC59\uACA8 \uBA39\uAE30"
   questIcon: {fileID: 0}
   category: 3

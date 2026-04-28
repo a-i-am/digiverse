@@ -36,4 +36,41 @@ namespace DigiVerse.Managers
             });
         }
 
+        private void OnEnable()
+        {
+            QuestEvents.OnQuestCompleted += HandleQuestCompleted;
+        }
+
+        private void OnDisable()
+        {
+            // 메모리 누수 방지
+            QuestEvents.OnQuestCompleted -= HandleQuestCompleted;
+        }
+
+        // QuestEvents 이벤트 수신 시 실행될 로직
+        private void HandleQuestCompleted(string questId, int rewardValue)
+        {
+            if (!_isFirebaseReady) return;
+
+            // users/{uid}/quests/{questId}
+            DocumentReference docRef = _db.Collection("users").Document(DUMMY_UID).Collection("quests").Document(questId);
+
+            // 서버로 보낼 JSON 형태의 데이터
+            Dictionary<string, object> questData = new Dictionary<string, object>
+            {
+                { "status", "COMPLETED" },
+                { "earnedValue", rewardValue },
+                { "completedAt", FieldValue.ServerTimestamp } // 서버의 현재 시간 자동 기록
+            };
+
+            // Firestore에 쓰기(비동기)
+            docRef.SetAsync(questData, SetOptions.MergeAll).ContinueWithOnMainThread(task =>
+            {
+                if (task.IsCompleted)
+                    Debug.Log($"[Firestore] 퀘스트({questId}) 저장 완료! 보상: {rewardValue}");
+                else
+                    Debug.LogError("[Firestore] 저장 실패!");
+            });
+        }
+    }
 }

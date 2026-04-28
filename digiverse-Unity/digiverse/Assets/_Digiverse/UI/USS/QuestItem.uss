@@ -1,0 +1,68 @@
+/* 퀘스트 카드 기본 스타일 */
+.quest-item-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--color-glass-bg);
+    border-width: 1px;
+    border-color: var(--color-glass-border);
+    border-radius: 15px;
+    margin-bottom: 8px;
+    /* Glassmorphism 효과 (Unity 2022+ 지원) */
+}
+
+.quest-info-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+.quest-label {
+    color: var(--color-text-main);
+    font-size: var(--font-size-m);
+    -unity-font-style: bold;
+    margin-left: 10px;
+}
+
+/* 슬라이드 토글 트랙 */
+.toggle-track {
+    width: 60px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 흰색 원형 핸들 */
+.toggle-handle {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 13px;
+    position: absolute;
+    left: 2px;
+    transition: left var(--transition-speed) ease-in-out, background-color var(--transition-speed);
+}
+
+/* 완료 상태일 때 핸들 위치 변경 */
+.quest-item-card--completed .toggle-handle {
+    left: 32px;
+    background-color: var(--color-neon-cyan);
+}
+
+/* X/O 텍스트 스타일 */
+.toggle-status-text {
+    position: absolute;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.x-text { right: 8px; color: #ff4d4d; }
+.o-text { left: 8px; color: var(--color-neon-cyan); opacity: 0; }
+
+.quest-item-card--completed .o-text { opacity: 1; }
+.quest-item-card--completed .x-text { opacity: 0; }

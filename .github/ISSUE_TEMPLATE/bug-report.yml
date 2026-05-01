@@ -1,0 +1,43 @@
+name: "🐛 버그 리포트 (Bug)"
+description: 발생한 문제를 보고하고 수정을 추적합니다.
+title: "[BUG]: "
+labels: ["bug", "high-priority"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## DigiVerse 결함 보고서
+        정확한 재현 경로와 기대 결과를 적어주시면 수정이 빠릅니다.
+
+  - type: textarea
+    id: bug_desc
+    attributes:
+      label: 🚨 문제 상황 (Description)
+      placeholder: 어떤 버그가 발생했나요?
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🕹️ 재현 경로 (Reproduction)
+      placeholder: |
+        1. 앱 실행
+        2. 특정 버튼 클릭
+        3. 오류 발생
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✨ 기대 결과 (Expected Behavior)
+      placeholder: 원래 어떻게 동작해야 하나요?
+    validations:
+      required: true
+
+  - type: input
+    id: error_log
+    attributes:
+      label: 📄 에러 로그 / 스크린샷 링크
+      placeholder: Unity Console 로그나 관련 스크린샷이 있다면 링크를 남겨주세요.

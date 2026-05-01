@@ -1,0 +1,52 @@
+name: "🚀 기능 구현 (Feature Report)"
+description: 기획 수정부터 기능 구현까지, Step을 선택하여 기록합니다.
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## DigiVerse 작업 보고서
+        기획 수정, 환경 설정, 신규 기능 구현 등 모든 작업을 이 양식에 기록합니다.
+
+  - type: dropdown
+    id: step_num
+    attributes:
+      label: 📌 작업 단계 (Step Classification)
+      description: 이 작업이 전체 로드맵 중 어디에 해당하는지 선택해주세요. (상황에 따라 왔다갔다 해도 무관합니다)
+      options:
+        - "Step 1: 프로젝트 기초 및 기획 (수정 포함)"
+        - "Step 2: UI/UX 자산 및 명세 구축"
+        - "Step 3: 기술 스택 및 환경 설정"
+        - "Step 4: 핵심 로직 개발 (Quest & Firebase)"
+        - "Step 5: 캐릭터 및 하우징 시스템"
+        - "Step 6: 배틀 및 미니게임 구현"
+        - "Step 7: QA 및 배포 준비"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 📝 개요 (Summary)
+      placeholder: 이 작업의 목적이나 변경이 필요한 이유를 간단히 적어주세요.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: ✅ 작업 리스트 (Task List)
+      placeholder: |
+        - [ ] 작업 내용 1
+        - [ ] 작업 내용 2
+      value: |
+        - [ ] 
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: 🔍 세부 구현 내용 (Technical Details)
+      description: 사용한 로직, 아키텍처(EventBus 등), 혹은 기획의 세부 변경 사항을 적어주세요.

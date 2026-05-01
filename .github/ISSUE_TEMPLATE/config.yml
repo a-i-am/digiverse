@@ -1,0 +1,5 @@
+blank_issues_enabled: false # 빈 이슈 생성 금지 (템플릿 강제)
+contact_links:
+  - name: 💡 DigiVerse 기획 아이디어
+    url: https://github.com/a-i-am/digiverse/discussions
+    about: 기능 구현 전 브레인스토밍은 여기서 진행해주세요.

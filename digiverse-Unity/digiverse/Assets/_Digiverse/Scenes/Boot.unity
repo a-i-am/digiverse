@@ -377,6 +377,50 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &483472124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483472126}
+  - component: {fileID: 483472125}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &483472125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483472124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f84ca0a3a9047154bb027d0c404d9ebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &483472126
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483472124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,6 +502,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _uiDocument: {fileID: 857610476}
   _questItemTemplate: {fileID: 9197481963319205126, guid: ff3c4d8aea7d4a044a5a6fbaad9fe6e1, type: 3}
+  _questDatabase:
+  - {fileID: 11400000, guid: 85e30e8554467a24fb65c6820001fceb, type: 2}
+  - {fileID: 11400000, guid: 20ddcf83afd7dfe45bf4cf15c0ea64d8, type: 2}
+  - {fileID: 11400000, guid: 517ca1da2c0079446af0da60a3bc34f5, type: 2}
+  - {fileID: 11400000, guid: 612518a3a04eca947b98d97d58d2e086, type: 2}
+  - {fileID: 11400000, guid: 06cc96aad19325b4983a148642852ba9, type: 2}
 --- !u!114 &857610476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -500,3 +550,4 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 857610477}
+  - {fileID: 483472126}

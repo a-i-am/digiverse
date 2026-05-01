@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Digiverse/UI/USS/DigiVerse_Variables.uss?fileID=7433441132597879392&amp;guid=925e1fb44f6f5e1478ff83fed805b11c&amp;type=3#DigiVerse_Variables" />
+    <Style src="project://database/Assets/_Digiverse/UI/USS/QuestItem.uss?fileID=7433441132597879392&amp;guid=5b84cff1771bd5348a1a5bc1bab1deb0&amp;type=3#QuestItem" />
+    <ui:VisualElement name="quest-item-container" class="quest-item-card">
+        <ui:VisualElement class="quest-info-group">
+            <ui:VisualElement name="quest-icon" class="quest-icon-placeholder" />
+            <ui:Label name="quest-title" text="영양제 먹기" class="quest-label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="slide-toggle-track" class="toggle-track">
+            <ui:Label name="status-x" text="X" class="toggle-status-text x-text" />
+            <ui:VisualElement name="slide-handle" class="toggle-handle" />
+            <ui:Label name="status-o" text="O" class="toggle-status-text o-text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
